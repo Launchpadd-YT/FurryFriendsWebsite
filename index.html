@@ -8,15 +8,26 @@
         <title>Furry Friends</title>
     </head>
     <body>
-        <div id="nav">
-            <a href="index.html" id="logo"><img src="dog.png" alt="Furry Friends Doggy Daycare's logo"></a>
-            <a href="blog.html">Blog</a>
-            <a href="rules+policies.html">Rules and Policies</a>
-            <a href="testimonials.html">Testimonials</a>
-            <a href="about.html">About</a>
-            <a href="rate.html">Rate Us!</a>
-            <a href="contact.html">Contact Us!</a>
-        </div>
+        <header class="header">
+            <div class="logo">
+                <img src="logo.png" alt="Furry Friends">
+            </div>
+            <ul class="menu">
+                <li class="menu-item"><a href="#">Testimonials</a></li>
+                <li class="menu-item"><a href="#">Rate Us!</a></li>
+                <li class="menu-item rules-policies"><a href="#">Rules and Policies</a></li>
+                <li class="menu-item"><a href="#">Blog</a></li>
+                <li class="menu-item"><a href="#">Contact Us!</a></li>
+                <li class="menu-item more"><a href="#">More</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item"><a href="#">Option 1</a></li>
+                        <li class="menu-item"><a href="#">Option 2</a></li>
+                        <li class="menu-item"><a href="#">Option 3</a></li>
+                        <li class="menu-item"><a href="#">Option 4</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </header>
         <section class="slideshow" id="slideshow">
             <div class="title">
                 <h1>Furry Friends</h1>
@@ -71,7 +82,28 @@
                 </div>
             </div>
         </footer>
-    <script src="script.js"></script>
-    <script src="main.js"></script>
     </body>
 </html>
+<script>
+    const slideshowImages = [
+        "Slideshow/image1.jpg",
+        "Slideshow/image2.jpg",
+        "Slideshow/image3.jfif",
+        "Slideshow/image4.jpg",
+        // Add more images as needed
+    ];
+
+    let currentImageIndex = 0;
+
+    function changeBackgroundImage() {
+        const slideshow = document.getElementById("slideshow");
+        slideshow.style.backgroundImage = `url(${slideshowImages[currentImageIndex]})`;
+        currentImageIndex++;
+        if (currentImageIndex >= slideshowImages.length) {
+            currentImageIndex = 0;
+        }
+    }
+
+    changeBackgroundImage();
+    setInterval(changeBackgroundImage, 5000); // Change images every 5 seconds.
+</script>

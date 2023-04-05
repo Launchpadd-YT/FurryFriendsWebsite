@@ -1,48 +1,3 @@
-html, body {
-    margin: 0;
-    height: 100%;
-    width: 100%;
-}
-
-#nav {
-    background-color: #333; /* Black background color */
-    position: fixed; /* Make it stick/fixed */
-    top: 0; /* Stay on top */
-    width: 100%; /* Full width */
-    transition: top 0.3s; /* Transition effect when sliding down (and up) */
-}
-
-/* Style the navbar links */
-#nav a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 30px;
-    text-decoration: none;
-}
-
-#nav a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-#logo {
-    padding: 4px !important;
-}
-
-#logo img {
-    height: 92px;
-    width: auto;
-}
-
-main {
-    height: 2000px;
-}
-
-
-/* v stupid head v  ^ me (bob) ^ */
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -51,6 +6,72 @@ main {
 
 body {
     font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: white;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu-item {
+    position: relative;
+    margin-left: 20px;
+}
+
+.menu-item a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.menu-item:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    z-index: 1;
+}
+
+.sub-menu .menu-item {
+    margin: 0;
+    text-align: center;
+}
+
+.sub-menu .menu-item a {
+    padding: 5px 10px;
+}
+
+.menu-item a:hover,
+.sub-menu .menu-item a:hover {
+    background-color: #f1f1f1;
+}
+
+.more::after {
+    content: "\25BC";
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .slideshow {
