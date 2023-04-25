@@ -4,62 +4,57 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="style.css">
         <title>Furry Friends</title>
     </head>
     <body>
         <header class="header">
             <div class="logo">
-                <img src="logo.png" alt="Furry Friends">
+                <a href="index.html"><img src="logo.png" alt="Furry Friends"></a>
             </div>
-            <ul class="menu">
-                <li class="menu-item"><a href="#">Testimonials</a></li>
-                <li class="menu-item"><a href="#">Rate Us!</a></li>
-                <li class="menu-item rules-policies"><a href="#">Rules and Policies</a></li>
-                <li class="menu-item"><a href="#">Blog</a></li>
-                <li class="menu-item"><a href="#">Contact Us!</a></li>
-                <li class="menu-item more"><a href="#">More</a>
-                    <ul class="sub-menu">
-                        <li class="menu-item"><a href="#">Option 1</a></li>
-                        <li class="menu-item"><a href="#">Option 2</a></li>
-                        <li class="menu-item"><a href="#">Option 3</a></li>
-                        <li class="menu-item"><a href="#">Option 4</a></li>
-                    </ul>
-                </li>
-            </ul>
+            <div id="nav">
+                <ul class="menu">
+                    <li class="menuItem"><a href="testimonials.html">Testimonials</a></li>
+                    <li class="menuItem"><a href="rate.html">Rate Us!</a></li>
+                    <li class="menuItem rulesAndPolicies"><a href="rules+policies.html">Rules and Policies</a></li>
+                    <li class="menuItem"><a href="blog.html">Blog</a></li>
+                    <li class="menuItem"><a href="contact.html">Contact Us!</a></li>
+                    <li class="menuItem"><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
         </header>
         <section class="slideshow" id="slideshow">
             <div class="title">
                 <h1>Furry Friends</h1>
             </div>
-            <div class="cta-box">
+            <div class="CTA_box">
                 <p>Like what you see?</p>
                 <button>Get a Quote</button>
             </div>
         </section>
-        <section class="section-3">
-            <img src="section2.png" alt="Section 2 Image">
+        <section class="sec3">
+            <img src="staffPhoto.jpeg" alt="Section 2 Image">
             <div>
-                <h2>Section 3 Title</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget tempor enim, a sodales libero. Nunc venenatis lacus at sapien posuere bibendum. In hac habitasse platea dictumst.</p>
+                <h2>Our Staff</h2>
+                <p>At Furry Friends Doggy Daycare, we hire locally to ensure our staff has a deep understanding of the community and its dogs. Our team undergoes rigorous training, and all members share a passion for animal care and customer service.<br><br>Our committment to hiring and training the best local staff is what sets us apart from other doggy daycare services. You can trust that your pet will have a fun, safe, and stimulating experience in our care.<br><br><b>Visit our establishment and see why We're the top choice for dog daycare services in the area!</b></p>
             </div>
         </section>
-        <section class="section-4">
+        <section class="sec4">
             <h2>Services</h2>
-            <div class="image-grid">
-                <div class="image-box">
+            <div class="imgGrid">
+                <div class="imgBox">
                     <img src="services1.png" alt="Service 1">
                     <p>Service 1 Title</p>
                 </div>
-                <div class="image-box">
+                <div class="imgBox">
                     <img src="services2.png" alt="Service 2">
                     <p>Service 2 Title</p>
                 </div>
-                <div class="image-box">
+                <div class="imgBox">
                     <img src="services3.png" alt="Service 3">
                     <p>Service 3 Title</p>
                 </div>
-                <div class="image-box">
+                <div class="imgBox">
                     <img src="services4.png" alt="Service 4">
                     <p>Service 4 Title</p>
                 </div>
@@ -67,11 +62,7 @@
         </section>
         <footer class="footer">
             <div class="info">
-                <div class="info-column">
-                    <h3>About Us</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque posuere tincidunt massa, ut posuere odio bibendum id. Integer elementum sapien tortor, a eleifend quam facilisis et.</p>
-                </div>
-                <div class="info-column">
+                <div class="infoColumn">
                     <h3>Contact Us</h3>
                     <p>
                         Address: 123 Furry Friends Lane<br>
@@ -83,27 +74,5 @@
             </div>
         </footer>
     </body>
+    <script src="main.js"></script>
 </html>
-<script>
-    const slideshowImages = [
-        "Slideshow/image1.jpg",
-        "Slideshow/image2.jpg",
-        "Slideshow/image3.jfif",
-        "Slideshow/image4.jpg",
-        // Add more images as needed
-    ];
-
-    let currentImageIndex = 0;
-
-    function changeBackgroundImage() {
-        const slideshow = document.getElementById("slideshow");
-        slideshow.style.backgroundImage = `url(${slideshowImages[currentImageIndex]})`;
-        currentImageIndex++;
-        if (currentImageIndex >= slideshowImages.length) {
-            currentImageIndex = 0;
-        }
-    }
-
-    changeBackgroundImage();
-    setInterval(changeBackgroundImage, 5000); // Change images every 5 seconds.
-</script>
