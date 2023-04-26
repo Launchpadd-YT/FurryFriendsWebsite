@@ -199,7 +199,7 @@ button:hover {
     background-size: cover;
 }
 
-.imageGrid img {
+.imgGrid img {
     display: block;
     width: 100%;
     max-width: 200px;
@@ -208,4 +208,23 @@ button:hover {
     object-fit: cover;
     aspect-ratio: 1/1;
   }
+
+#RPHSec {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
   
+}
+  
+.RPSec {
+    margin: 20px;
+}
+
+.RPul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.RPH {
+    margin-top: 0;
+}
