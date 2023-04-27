@@ -13,6 +13,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+main {
+    padding: 20px;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -105,8 +109,8 @@ button:hover {
 }
 
 .sec3 img {
-    max-width: 50%;
-    height: auto;
+    max-height: 500px;
+    width: auto;
     display: block;
     margin: 0 auto;
 }  
@@ -209,22 +213,151 @@ button:hover {
     aspect-ratio: 1/1;
   }
 
-#RPHSec {
+.genHeadSec {
     background-color: #333;
     color: #fff;
     padding: 20px;
   
 }
   
-.RPSec {
+.genSec {
     margin: 20px;
 }
 
-.RPul {
+.genUl {
     list-style: disc;
     margin-left: 20px;
 }
 
-.RPH {
+.RPHeading {
     margin-top: 0;
+}
+
+form label {
+	display: block;
+	margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+form input[type=text], form input[type=email], form select, form textarea {
+	width: 100%;
+	padding: 10px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #ccc;
+}
+
+
+form input[type=submit] {
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+form input[type=submit]:hover {
+	background-color: #3e8e41;
+}
+
+form button[type="submit"] {
+	background-color: #F5B7B1;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+	background-color: #E74C3C;
+}
+
+.genHeader {
+    margin: 0;
+}
+
+#testimonialContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.testimonial {
+	background-color: #FADBD8;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+	flex-basis: calc(33.33% - 20px);
+	margin-bottom: 20px;
+	padding: 20px;
+}
+
+.testimonialTxt {
+	font-style: italic;
+	margin-bottom: 10px;
+}
+
+.testimonialAuthor {
+	text-align: right;
+	font-weight: bold;
+}
+
+#blogContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.blogPost {
+	flex-basis: calc(33.33% - 20px);
+	margin-bottom: 20px;
+	padding: 20px;
+	background-color: #ECF0F1;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.blogPost img {
+	max-width: 100%;
+	margin-bottom: 10px;
+}
+
+.blogPost h3 {
+	margin-top: 0;
+}
+
+.blogPost p {
+	margin-bottom: 10px;
+}
+
+.blogPost a {
+	display: inline-block;
+	padding: 5px 10px;
+	background-color: #F5B7B1;
+	color: white;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+.aboutMain {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.aboutSec {
+	margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+	main {
+		padding: 10px;
+	}
+
+	header {
+		padding: 10px;
+	}
 }

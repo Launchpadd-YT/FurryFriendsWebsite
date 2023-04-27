@@ -24,9 +24,30 @@
                 </ul>
             </div>
         </header>
-        <main>
-            <h1>test</h1>  
-        </main>
+        <section class="genSec">
+            <h1>Rate Us</h1>
+            <p>Please take a moment to rate your experience with us</p>
+        </section>
+        <section class="genSec">
+            <form id="rateForm" class="rateForm" method="get">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="rating">Rating:</label>
+                <select id="rating" name="rating" required>
+                    <option value="">Select a rating</option>
+                    <option value="5">5 stars</option>
+                    <option value="4">4 stars</option>
+                    <option value="3">3 stars</option>
+                    <option value="2">2 stars</option>
+                    <option value="1">1 star</option>
+                </select>
+                <label for="comment">Comment:</label>
+                <textarea id="comment" name="comment"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
         <footer class="footer">
             <div class="info">
                 <div class="infoColumn">
@@ -38,7 +59,11 @@
                         Email: contact@furryfriends.com
                     </p>
                 </div>
+                <div class="infoColumn">
+                    <p>Copyright &copy; Furry Friends Doggy Daycare</p>
+                </div>
             </div>
         </footer>
+        <script src="rate.js"></script>
     </body>
 </html>
