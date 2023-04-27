@@ -109,8 +109,8 @@ button:hover {
 }
 
 .sec3 img {
-    max-height: 500px;
-    width: auto;
+    max-width: 30%;
+    height: auto;
     display: block;
     margin: 0 auto;
 }  
