@@ -162,6 +162,14 @@ button:hover {
     .menuItem {
         flex: 1;
     }
+
+    main {
+		padding: 10px;
+	}
+
+	.genHeadSec {
+		padding: 10px;
+	}
 }
 
 @media screen and (max-width: 480px) {
@@ -220,11 +228,11 @@ button:hover {
   
 }
   
-.genSec {
+section {
     margin: 20px;
 }
 
-.genUl {
+ul {
     list-style: disc;
     margin-left: 20px;
 }
@@ -261,19 +269,6 @@ form input[type=submit] {
 
 form input[type=submit]:hover {
 	background-color: #3e8e41;
-}
-
-form button[type="submit"] {
-	background-color: #F5B7B1;
-	color: white;
-	padding: 10px 20px;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
-}
-
-form button[type="submit"]:hover {
-	background-color: #E74C3C;
 }
 
 .genHeader {
@@ -353,11 +348,5 @@ form button[type="submit"]:hover {
 }
 
 @media only screen and (max-width: 768px) {
-	main {
-		padding: 10px;
-	}
 
-	header {
-		padding: 10px;
-	}
 }

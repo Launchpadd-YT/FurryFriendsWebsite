@@ -1,16 +1,17 @@
-const rate = document.querySelector('#rateForm');
-const contact = document.querySelector('#contactForm');
+const rate = document.getElementById("rateForm");
+const contact = document.getElementById("contactForm");
 
-rate.addEventListener('submit', (e) => {
-	e.preventDefault();
+if (rate) {
+	rate.addEventListener('submit', () => {
+		// Display a success message
+		alert("Thank you for rating us!");
+	});
+}
 
-	// Display a success message
-	alert('Thank you for rating us!');
-});
 
-contact.addEventListener('submit', (e) => {
-	e.preventDefault();
-
-	// Display a success message
-	alert('Thank you for contacting us!');
-});
+if (contact) {
+	// Not called
+	contact.addEventListener("submit", () => {
+	  alert("Thank you for contacting us!");
+	});
+}

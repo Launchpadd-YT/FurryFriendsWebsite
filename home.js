@@ -1,9 +1,9 @@
 const slideshowImages = [
     "Slideshow/image1.jpg",
     "Slideshow/image2.jpg",
-    "Slideshow/image3.jfif",
+    "Slideshow/image3.jpg",
     "Slideshow/image4.jpg",
-    // Add more images as needed
+    "Slideshow.image5.jpg"
 ];
 
 let currentImageIndex = 0;
