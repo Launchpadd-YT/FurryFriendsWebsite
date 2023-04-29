@@ -19,3 +19,7 @@ function changeBackgroundImage() {
 
 changeBackgroundImage();
 setInterval(changeBackgroundImage, 5000); // Change images every 5 seconds.
+
+function quoteScroll() {
+  document.getElementById('quote').scrollIntoView();
+}

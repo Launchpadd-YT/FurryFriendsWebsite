@@ -7,6 +7,7 @@
 body, html {
     height: 100%;
     width: 100%;
+    background: #dddbf1;
 }
 
 body {
@@ -22,7 +23,7 @@ main {
     justify-content: space-between;
     align-items: center;
     padding: 10px 30px;
-    background-color: white;
+    background-color: #dddbf1;
 }
 
 .logo img {
@@ -44,6 +45,7 @@ main {
     padding: 10px;
     text-decoration: none;
     color: black;
+    transition: background-color, 500ms;
 }
 
 .menuItem:hover .sub-menu {
@@ -51,7 +53,12 @@ main {
 }
 
 .menuItem a:hover {
-    background-color: #f1f1f1;
+    background-color: #A5CC7A;
+}
+
+.menuItem a.active {
+    background-color: #3B1A01;
+    color: white;
 }
 
 .slideshow {
@@ -85,14 +92,15 @@ main {
 
 button {
     padding: 10px 20px;
-    background-color: #333;
+    background-color: #7A306C;
     color: white;
     border: none;
     cursor: pointer;
+    transition: background-color, 500ms;
 }
 
 button:hover {
-    background-color: #555;
+    background-color: #AF82A6;
 }
 
 .sec3 {
@@ -136,7 +144,7 @@ button:hover {
 }
 
 .footer {
-    background-color: #333;
+    background-color: #3C4F76;
     color: white;
     padding: 40px 0;
 }
@@ -222,10 +230,7 @@ button:hover {
   }
 
 .genHeadSec {
-    background-color: #333;
-    color: #fff;
     padding: 20px;
-  
 }
   
 section {
@@ -259,7 +264,7 @@ form input[type=text], form input[type=email], form select, form textarea {
 
 
 form input[type=submit] {
-	background-color: #4CAF50;
+	background-color: #7A306C;
 	color: white;
 	border: none;
 	padding: 10px 20px;
@@ -268,7 +273,7 @@ form input[type=submit] {
 }
 
 form input[type=submit]:hover {
-	background-color: #3e8e41;
+	background-color: #7A306C;
 }
 
 .genHeader {
@@ -282,7 +287,7 @@ form input[type=submit]:hover {
 }
 
 .testimonial {
-	background-color: #FADBD8;
+	background-color: rgba(118, 131, 159, 0.5);
 	border-radius: 5px;
 	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
 	flex-basis: calc(33.33% - 20px);
@@ -310,7 +315,7 @@ form input[type=submit]:hover {
 	flex-basis: calc(33.33% - 20px);
 	margin-bottom: 20px;
 	padding: 20px;
-	background-color: #ECF0F1;
+	background-color: rgba(118, 131, 159, 0.5);
 	box-sizing: border-box;
 	text-align: center;
 }
@@ -331,7 +336,7 @@ form input[type=submit]:hover {
 .blogPost a {
 	display: inline-block;
 	padding: 5px 10px;
-	background-color: #F5B7B1;
+	background-color: #7A306C;
 	color: white;
 	text-decoration: none;
 	border-radius: 5px;
@@ -345,4 +350,56 @@ form input[type=submit]:hover {
 
 .aboutSec {
 	margin-bottom: 40px;
+}
+
+.blogMain {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.post {
+    flex: 2;
+    margin-right: 2rem;
+}
+
+.post h2 {
+    margin-bottom: 1rem;
+}
+
+.sidebar {
+    flex: 1;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    margin-bottom: 1rem;
+}
+
+.sidebar a {
+    color: #333;
+    text-decoration: none;
+}
+
+p {
+    font-size: 1em;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+figcaption {
+    font-size: 0.75em;
 }
